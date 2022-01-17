@@ -1,6 +1,6 @@
 function Header() {
     return (
-        <h1>Desde el header</h1>
+        <h1>From header</h1>
     )
 }
 

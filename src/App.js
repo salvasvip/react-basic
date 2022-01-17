@@ -1,10 +1,13 @@
 import Header from "./components/Header";
+import Footer from "./components/Footer";
+import {Fragment} from "react";
 
 function App() {
   return (
-    <div>
+    <Fragment>
         <Header />
-    </div>
+        <Footer />
+    </Fragment>
   )
 }
 
