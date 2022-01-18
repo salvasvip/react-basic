@@ -1,14 +1,15 @@
+import {Fragment} from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import {Fragment} from "react";
 
 function App() {
-  return (
-    <Fragment>
-        <Header />
-        <Footer />
-    </Fragment>
-  )
+    const date = new Date().getFullYear()
+    return (
+        <Fragment>
+            <Header title='Online Shop'/>
+            <Footer date={date}/>
+        </Fragment>
+    )
 }
 
 export default App

@@ -1,6 +1,6 @@
-function Header() {
+function Header({title}) {
     return (
-        <h1>From header</h1>
+        <h1>{title}</h1>
     )
 }
 
