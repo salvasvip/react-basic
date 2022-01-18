@@ -27,7 +27,7 @@ function App() {
                     products={products}
                     addProduct={addProduct}/>
             ))}
-            <Cart cart={cart}/>
+            <Cart cart={cart} addProduct={addProduct}/>
             <Footer date={date}/>
         </Fragment>
     )

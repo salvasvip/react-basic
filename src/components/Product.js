@@ -8,11 +8,18 @@ const Product = ({product, products, cart, addProduct}) => {
             ...cart, selectedProduct
         ])
     }
+    const deleteProduct = id => {
+        const deletedProduct = cart.filter(product => product.id !== id)
+        addProduct(deletedProduct)
+    }
     return (
         <Fragment>
             <h2>{name}</h2>
             <p>${price}</p>
-            <button type="button" onClick={() => selectProduct(id)}>Comprar</button>
+            {products ?
+                <button type="button" onClick={() => selectProduct(id)}>Buy</button> :
+                <button type="button" onClick={() => deleteProduct(id)}>Delete</button>
+            }
         </Fragment>
     )
 }

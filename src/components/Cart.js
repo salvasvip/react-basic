@@ -2,7 +2,7 @@ import Product from "./Product";
 import {Fragment} from "react";
 import './cart.css'
 
-const Cart = ({cart}) => (
+const Cart = ({cart, addProduct}) => (
     <Fragment>
         <div className="cart">
             <h2>Shopping Cart</h2>
@@ -12,6 +12,8 @@ const Cart = ({cart}) => (
                     <Product
                         key={product.id}
                         product={product}
+                        cart={cart}
+                        addProduct={addProduct}
                     />
                 ))
             }
