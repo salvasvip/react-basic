@@ -2,6 +2,7 @@ import {Fragment, useState} from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Product from "./components/Product";
+import Cart from "./components/Cart";
 
 function App() {
     const [products, saveProducts] = useState([
@@ -26,6 +27,7 @@ function App() {
                     products={products}
                     addProduct={addProduct}/>
             ))}
+            <Cart cart={cart}/>
             <Footer date={date}/>
         </Fragment>
     )
